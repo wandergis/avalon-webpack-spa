@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{%=o.htmlWebpackPlugin.options.title || 'Webpack App'%}</title>
+    {% if (o.htmlWebpackPlugin.files.favicon) { %}
+    <link rel="shortcut icon" href="{%=o.htmlWebpackPlugin.files.favicon%}">
+    {% } %}
+    {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+    <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+    {% } %}
+</head>
+<body>
+<div ms-controller="app">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">WanderGIS</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="#!/home" class="pure-menu-link">主页</a></li>
+                <li class="pure-menu-item"><a href="#!/about" class="pure-menu-link">关于</a></li>
+
+                <li class="pure-menu-item menu-item-divided">
+                    <a href="#!/services" class="pure-menu-link">服务</a>
+                </li>
+
+                <li class="pure-menu-item"><a href="#!/contact" class="pure-menu-link">联系</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div style="position:absolute;left: 150px;top:0;bottom: 0;right: 0">
+            <div ms-view="" class="router-panel"></div>
+        </div>
+    </div>
+</div>
+{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+<script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+{% } %}
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "name": "avalon-webpack-spa",
+  "version": "0.1.0",
+  "description": "write a spa by avalon and  webpack",
+  "main": "server.js",
+  "scripts": {
+    "dev": "webpack --progress --profile --colors",
+    "watch": "webpack-dev-server --hot --inline --progress --colors",
+    "start": "gulp",
+    "build":"gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wandergis/avalon-webpack-spa.git"
+  },
+  "keywords": [
+    "avalon",
+    "webpack",
+    "spa",
+    "gulp"
+  ],
+  "author": "wandergis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wandergis/avalon-webpack-spa/issues"
+  },
+  "homepage": "https://github.com/wandergis/avalon-webpack-spa#readme",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "purecss": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-runtime": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-runtime": "^5.8.0",
+    "css-loader": "^0.23.0",
+    "cssnext-loader": "^1.0.1",
+    "del": "^2.2.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "html-webpack-plugin": "^1.7.0",
+    "style-loader": "^0.13.0",
+    "text-loader": "0.0.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
