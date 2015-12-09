@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "webpack --progress --profile --colors",
     "watch": "webpack-dev-server --hot --inline --progress --colors",
-    "start": "gulp",
-    "build":"gulp"
+    "start": "node server.js",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
