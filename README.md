@@ -4,6 +4,10 @@
 
 > 这是一个集成了`avalon` `jquery` `gulp` `webpack`的偏工程化的一个项目模板,替换avalon和avalon.shim版本为1.4.7.1，目前热替换部分还有一些问题,等以后再解决了.
 
+## [在线访问](http://wandergis.github.io/avalon-webpack-spa/dist/#!/home)
+
+## [项目主页](http://wandergis.github.io/avalon-webpack-spa)
+
 ## 使用方法
 注意事项
 
