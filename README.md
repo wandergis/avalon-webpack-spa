@@ -2,7 +2,7 @@
 学习和使用avalon已经一个多月了,中间历经坎坷,踩坑跳坑,也算是积累了一些avalon的相关实践的经验.
 趁着项目结束,终于有闲暇实践来整理和沉淀这些知识.
 
-> 这是一个集成了`avalon` `jquery` `gulp` `webpack` `mmstate` `purecss`的偏工程化的一个项目模板,支持异步加载和打包，替换oniui的avalon和avalon.shim版本为1.4.7.1，目前热替换部分还有一些问题,等以后再解决了.
+> 这是一个集成了`avalon` `jquery` `gulp` `webpack` `mmstate` `purecss`的偏工程化的一个项目模板,支持异步加载和打包，替换oniui的avalon和avalon.shim版本为1.4.7.1，~~目前热替换部分还有一些问题,等以后再解决了.~~ 热替换已解决
 
 ## [在线访问](http://wandergis.github.io/avalon-webpack-spa/dist/#!/home)
 
