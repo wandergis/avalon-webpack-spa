@@ -36,5 +36,6 @@
 8. 使用oniui最好使用1.4.7版本的avalon，解决了光标和下拉联动的问题
 
 ## 参考文章
+-  [webpack入门指谜](http://segmentfault.com/a/1190000002551952?_ea=192337)
 -  [webpack打包avalon＋oniui+jquery](http://www.cnblogs.com/rubylouvre/p/4963984.html)
 -  [webpack+avalon+mmState打包方案](http://www.cnblogs.com/rubylouvre/p/4995106.html)
