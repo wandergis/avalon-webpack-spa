@@ -3,8 +3,8 @@
  */
 var path = require('path');
 var webpack = require("webpack");
-var ExtractTextPlugin = require("extract-text-webpack-plugin");//将组件中的样式乖乖提取出来
-var HtmlWebpackPlugin = require('html-webpack-plugin');//html模板插入代码
+var ExtractTextPlugin = require("extract-text-webpack-plugin"); //将组件中的样式乖乖提取出来
+var HtmlWebpackPlugin = require('html-webpack-plugin'); //html模板插入代码
 
 //webpck插件
 var plugins = [
@@ -39,37 +39,32 @@ module.exports = {
     chunkFilename: "[name].chunk.[chunkhash:8].js" //给require.ensure用
   },
   module: {
-    loaders: [
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract(
-          "style-loader", "css-loader?sourceMap!cssnext-loader")
-      },
-      {
-        test: /\.(jpg|png|gif)$/,
-        loader: "file-loader?name=images/[name].[hash].[ext]"
-      },
-      {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "url-loader?limit=10000&minetype=application/font-woff"
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader"
-      },
-      {
-        test: /\.json$/,
-        loader: 'json'
-      }],
+    loaders: [{
+      test: /\.css$/,
+      loader: ExtractTextPlugin.extract(
+        "style-loader", "css-loader?sourceMap!cssnext-loader")
+    }, {
+      test: /\.(jpg|png|gif)$/,
+      loader: "file-loader?name=images/[name].[hash].[ext]"
+    }, {
+      test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: "url-loader?limit=10000&minetype=application/font-woff"
+    }, {
+      test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: "file-loader"
+    }, {
+      test: /\.json$/,
+      loader: 'json'
+    }],
     preLoaders: [{
       test: /\.js$/,
-      loader: "amdcss-loader"
+      loader: "require-css-preloader"
     }]
   },
 
   resolve: {
     // require时省略的扩展名，如：require('module') 不需要module.js
-    extension: ['', '.js','.css'],
+    extension: ['', '.js', '.css'],
     //别名
     alias: {
       mmRequest: path.join(__dirname, "src/assets/vendor/oniui/mmRequest/mmRequest"),
