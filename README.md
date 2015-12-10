@@ -13,7 +13,7 @@
 
 1. `mkdir demo && cd demo && git clone https://github.com/wandergis/avalon-webpack-spa.git`
 2. `npm install` 
-	确保安装了node,及全局安装了gulp和webpack，复制webpack-amdcss-loader中的amdcss-loader目录到node_modules目录下，切记切记
+	确保安装了node,及全局安装了gulp和webpack
 	
 3. `gulp` 或者 `npm start`
 
