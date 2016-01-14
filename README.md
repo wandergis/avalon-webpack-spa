@@ -15,7 +15,8 @@
 2. `npm install` 
 	确保安装了node,及全局安装了gulp和webpack
 	
-3. `gulp` 或者 `npm start`
+3. `gulp` 或者 `npm start` 启动开发模式，支持热替换
+4. `webpack`打包到dist目录，`webpack -p` 打包压缩到dist目录
 
 ## 效果截图
 
